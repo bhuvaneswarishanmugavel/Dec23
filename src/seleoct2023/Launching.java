@@ -16,12 +16,15 @@ public static void main(String[] args) throws InterruptedException {
 	fbuser.sendKeys("vedha@gmail.com");
 	String text=fbuser.getAttribute("value");
 	System.out.println(text);
+	System.out.println("USERID SEND SUCCESSFULLY");
+
 	
 	WebElement password = driver.findElement(By.id("pass"));
-	password.sendKeys("1234567");
-	Thread.sleep(2000);
+	password.sendKeys("1234567");	
 	String attribute = password.getAttribute("value");
 	System.out.println(attribute);
+	System.out.println("PASSWORD SEND SUCCESSFULLY");
+	Thread.sleep(2000);
 	
 	WebElement click = driver.findElement(By.xpath("//button[@data-testid='royal_login_button']"));
 	click.click();
