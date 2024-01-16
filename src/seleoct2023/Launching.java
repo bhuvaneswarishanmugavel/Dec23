@@ -26,6 +26,9 @@ public static void main(String[] args) throws InterruptedException {
 	System.out.println("PASSWORD SEND SUCCESSFULLY");
 	Thread.sleep(2000);
 	
+	WebElement facebooktext = driver.findElement(By.xpath("//h2[contains(text(),'helps')]"));
+	String text2 = facebooktext.getText();
+	System.out.println(text2);
 	WebElement click = driver.findElement(By.xpath("//button[@data-testid='royal_login_button']"));
 	click.click();
 	
