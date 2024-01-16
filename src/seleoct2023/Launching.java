@@ -14,9 +14,11 @@ public static void main(String[] args) throws InterruptedException {
 	
 	WebElement fbuser = driver.findElement(By.id("email"));
 	fbuser.sendKeys("vedha@gmail.com");
+	System.out.println("USERID SEND SUCCESSFULLY");
 	
 	WebElement password = driver.findElement(By.id("pass"));
 	password.sendKeys("1234567");
+	System.out.println("PASSWORD SEND SUCCESSFULLY");
 	Thread.sleep(2000);
 	
 	String text=fbuser.getAttribute("value");
